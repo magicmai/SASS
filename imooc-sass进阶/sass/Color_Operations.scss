@@ -1,0 +1,113 @@
+//颜色函数
+
+/* 1.RGBA函数 */
+$colors: (
+  rgb: rgb(200, 40, 88), //#c82858
+  rgba: rgba(#c82858, .65), //rgba(200, 40, 88, 0.65)
+  colorRed: red(#c82858), //200
+  colorgreen: green(#c82858), //40
+  colorBlue:  blue(#c82858), //88
+  mix: mix(#c82858, rgba(200,40,80,.65), .3) //rgba(200, 40, 80, 0.65105)
+);
+
+/* rgba() */
+.rgba {
+  color: rgba(#f36, .5);
+  background: rgba(0, 0, 125, .7);
+}
+
+/* Red(), green(), blue() */
+.red {
+  color: rgb(red(#f36), green(#f36), blue(#f36));
+}
+
+/* mix() */
+$color1: #f36;
+$color2: #f63;
+
+.mix {
+  color: mix($color1, $color2, 75%);
+}
+
+
+/* 2.HSL函数 */
+//hsl($hue,$saturation,$lightness)
+//hsla($hue,$saturation,$lightness,$alpha)
+//hue($color)
+//saturation($color)
+//lightness($color)
+//adjust-hue($color,$degrees)
+//lighten($color,$amount)
+//darken($color,$amount)
+//saturate($color,$amount)
+//desaturate($color,$amount)
+//grayscale($color)
+//complement($color)
+//invert($color)
+
+/* lighten()、darken() */
+$baseColor: #ad141e;
+
+.lighten {
+  background-color: $baseColor;
+  color: lighten($baseColor, 20%);
+}
+
+.darken {
+  background-color: $baseColor;
+  color: darken($baseColor, 20%);
+}
+
+/* saturate()、desaturate() */
+.saturate {
+  background-color: $baseColor;
+  color: saturate($baseColor, 20%);
+}
+
+.desaturate {
+  background-color: $baseColor;
+  color: desaturate($baseColor, 20%);
+}
+
+/* adjust-hue()函数 */
+.adjust-hue {
+  background-color: $baseColor;
+  color: adjust-hue($baseColor, 40deg);
+  border-color: adjust-hue($baseColor, 40deg);
+}
+
+/* grayscale() */
+.grayscale {
+  background-color: $baseColor;
+  color: grayscale($baseColor);
+}
+
+/* 3.Opacity函数 */
+//alpha($color) /opacity($color)
+//rgba($color, $alpha)
+//opacify($color, $amount) / fade-in($color, $amount)
+//transparentize($color, $amount) / fade-out($color, $amount)
+
+/* alpha()、opacity() */
+$color: #f2f;
+
+.alpha {
+  color: $color;
+  background-color: rgba(120, 188, 0, alpha($color));
+  border-color: rgba(120, 188, 0, opacity($color));
+}
+
+/* opacify()、fade-in() */
+.opacify {
+  color: $color;
+  background-color: opacify($color, .5);
+  border-color: fade-in(rgba(220, 0, 220, .1), .5);
+}
+
+/* transparentize()、 fade-out() */
+.transparentize {
+  color: $color;
+  background-color: transparentize($color, .5);
+  border-color: fade-out(rgba(220, 0, 220, .8), .5);
+}
+

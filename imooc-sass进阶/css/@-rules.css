@@ -1,0 +1,112 @@
+/*
+Error: 你需要将15值设置在10以内的数
+        on line 111 of @-rules.scss, in `error'
+        from line 117 of @-rules.scss
+
+106:   @if $x < 10 {
+107:     width: $x * 10px;
+108:   } @else if $x == 10 {
+109:     width: $x;
+110:   } @else {
+111:     @error "你需要将#{$x}值设置在10以内的数";
+112:   }
+113: 
+114: }
+115: 
+116: .test {
+
+Backtrace:
+@-rules.scss:111:in `error'
+@-rules.scss:117
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:226:in `visit_error'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:301:in `block (2 levels) in visit_if'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:301:in `map'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:301:in `block in visit_if'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:300:in `visit_if'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:304:in `visit_if'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:304:in `visit_if'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:366:in `block (4 levels) in visit_mixin'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:366:in `map'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:366:in `block (3 levels) in visit_mixin'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:366:in `block (2 levels) in visit_mixin'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:84:in `perform_arguments'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:361:in `block in visit_mixin'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/plugin.rb:82:in `update_stylesheets'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.24/bin/scss:13:in `<top (required)>'
+D:/Ruby22/bin/scss:23:in `load'
+D:/Ruby22/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: 你需要将15值设置在10以内的数\A         on line 111 of @-rules.scss, in `error'\A         from line 117 of @-rules.scss\A \A 106:   @if $x < 10 {\A 107:     width: $x * 10px;\A 108:   } @else if $x == 10 {\A 109:     width: $x;\A 110:   } @else {\A 111:     @error \"你需要将#{$x}值设置在10以内的数\";\A 112:   }\A 113: \A 114: }\A 115: \A 116: .test {"; }

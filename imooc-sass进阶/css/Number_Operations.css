@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* 数字函数 */
+/* 1. percentage()函数 */
+.footer1 {
+  width: 50%;
+  height: 20%; }
+
+/* 2. round()函数 */
+.footer2 {
+  width: 15px; }
+
+/* 3. ceil()函数 */
+.footer3 {
+  width: 10px; }
+
+/* 4. floor()函数 */
+.footer4 {
+  width: 10px; }
+
+/* 5. abs()函数 */
+.footer5 {
+  width: 2em; }
+
+/* 6. min()函数 */
+.footer6 {
+  width: 2em; }
+
+/* 7. abs()函数 */
+.footer7 {
+  width: 10em; }
+
+/* 8. random()函数 */
+.p1 {
+  line-height: 7; }
+
+/*# sourceMappingURL=Number_Operations.css.map */

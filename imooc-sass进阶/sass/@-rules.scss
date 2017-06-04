@@ -1,0 +1,122 @@
+// @-规则和指令
+
+/* @import */
+@import "Number_Operations";
+/* 嵌套 @import */
+#main {
+  @import "String_Operations";
+}
+
+/* @media */
+.sidebar {
+  width: 300px;
+  @media screen and (orientation: landscape) {
+    width: 500px;
+  }
+}
+
+@media screen {
+  .sidebar {
+    @media (orientation: landscape) {
+      width: 500px;
+    }
+  }
+}
+
+/* @extend */
+.hoverlink {
+  @extend a:hover;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.hoverlink {
+  @extend a:hover;
+}
+.comment a.user:hover {
+  font-weight: bold;
+}
+
+// 多个扩展
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.attention {
+  font-size: 3em;
+  background-color: #ff0;
+}
+.seriousError {
+  @extend .error;
+  @extend .attention;
+  border-width: 3px;
+}
+
+// 扩展单一选择器
+#context a%extreme {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.notice {
+  @extend %extreme;
+}
+
+/* @at-root */
+.a {
+  color: red;
+
+  .b {
+    color: orange;
+
+    .c {
+      color: yellow;
+
+      @at-root .d {
+        color: green;
+      }
+    }
+  }
+}
+
+/* @debug */
+@debug 10em + 12em;
+
+/* @warn */
+@mixin adjust-location($x, $y) {
+  @if unitless($x) { //unitless是内置函数，判断数值是否有“单位”
+    @warn "Assuming #{$x} to be in pixels";
+    $x: 1px * $x;
+  }
+  @if unitless($y) {
+    @warn "Assuming #{$y} to be in pixels";
+    $y: 1px * $y;
+  }
+  position: relative; left: $x; top: $y;
+}
+
+.botton{
+  @include adjust-location(20px, 30);
+}
+
+/* @error */
+@mixin error($x){
+  @if $x < 10 {
+    width: $x * 10px;
+  } @else if $x == 10 {
+    width: $x;
+  } @else {
+    @error "你需要将#{$x}值设置在10以内的数";
+  }
+
+}
+
+.test {
+  @include error(15);
+}
+
+
+
+

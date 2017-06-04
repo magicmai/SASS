@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/*普通变量*/
+body {
+  font-size: 12px; }
+
+/*默认变量*/
+body {
+  line-height: 2; }
+
+/*变量的调用*/
+.btn-primary {
+  background-color: #337ab7;
+  color: #fff;
+  border: 1px solid #2e6da4; }
+
+/*全局变量与局部变量*/
+.block {
+  color: orange; }
+
+em a {
+  color: red; }
+
+span {
+  color: orange; }
+
+/*嵌套——选择器嵌套*/
+nav a {
+  color: red; }
+  header nav a {
+    color: green; }
+
+/*属性嵌套*/
+.box {
+  border-top: 1px solid red;
+  border-bottom: 1px solid green; }
+
+/*伪类嵌套*/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+.clearfix:after {
+  clear: both;
+  overflow: hidden; }
+
+/*混合宏-声明混合宏*/
+button {
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+/*混合宏的参数--传一个不带值的参数*/
+.box {
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+/*混合宏的参数--传一个带值的参数*/
+.btn {
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+/*但有的时候，页面中有些元素的圆角值不一样，那么可以随机给混合宏传值*/
+.box {
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
+/*传多个参数*/
+.box-center {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -250px; }
+
+/*特别的参数: "..." */
+.box {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0 0 2px rgba(0, 0, 0, 0.2); }
+
+/*# sourceMappingURL=variable.css.map */

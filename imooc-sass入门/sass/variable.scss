@@ -1,0 +1,130 @@
+/*普通变量*/
+$fontSize: 12px;
+body{
+  font-size:$fontSize;
+}
+
+/*默认变量*/
+$baseLineHeight: 2;
+$baseLineHeight:1.5 !default;
+body{
+  line-height: $baseLineHeight;
+}
+
+/*变量的调用*/
+$brand-primary : darken(#428bca, 6.5%) !default; // #337ab7
+$btn-primary-color: #fff !default;
+$btn-primary-bg : $brand-primary !default;
+$btn-primary-border : darken($btn-primary-bg, 5%) !default;
+.btn-primary {
+  background-color: $btn-primary-bg;
+  color: $btn-primary-color;
+  border: 1px solid $btn-primary-border;
+}
+
+/*全局变量与局部变量*/
+$color: orange !default;//定义全局变量(在选择器、函数、混合宏...的外面定义的变量为全局变量)
+.block {
+  color: $color;//调用全局变量
+}
+em {
+  $color: red;//定义局部变量
+  a {
+    color: $color;//调用局部变量
+  }
+}
+span {
+  color: $color;//调用全局变量
+}
+
+/*嵌套——选择器嵌套*/
+nav {
+  a {
+    color: red;
+
+    header & {
+      color:green;
+    }
+  }
+}
+
+/*属性嵌套*/
+.box {
+  border: {
+    top: 1px solid red;
+    bottom: 1px solid green;
+  }
+}
+
+/*伪类嵌套*/
+.clearfix{
+  &:before,
+  &:after {
+    content:"";
+    display: table;
+  }
+  &:after {
+    clear:both;
+    overflow: hidden;
+  }
+}
+
+/*混合宏-声明混合宏*/
+@mixin border-radius{
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+button {
+  @include border-radius;
+}
+
+/*混合宏的参数--传一个不带值的参数*/
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+.box {
+  @include border-radius(3px);
+}
+
+/*混合宏的参数--传一个带值的参数*/
+@mixin border-radius($radius:3px){
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+.btn {
+  @include border-radius;
+}
+/*但有的时候，页面中有些元素的圆角值不一样，那么可以随机给混合宏传值*/
+.box {
+  @include border-radius(50%);
+}
+
+/*传多个参数*/
+@mixin center($width,$height){
+  width: $width;
+  height: $height;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($height) / 2;
+  margin-left: -($width) / 2;
+}
+.box-center {
+  @include center(500px,300px);
+}
+
+/*特别的参数: "..." */
+@mixin box-shadow($shadows...){
+  @if length($shadows) >= 1 {
+    -webkit-box-shadow: $shadows;
+    box-shadow: $shadows;
+  } @else {
+    $shadows: 0 0 2px rgba(#000,.25);
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+  }
+}
+.box {
+  @include box-shadow(0 0 1px rgba(#000,.5),0 0 2px rgba(#000,.2));
+}

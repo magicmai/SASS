@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*扩展、继承*/
+.btn, .btn-primary, .btn-second {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 14px; }
+
+.btn-primary {
+  background-color: #f36;
+  color: #fff; }
+
+.btn-second {
+  background-clor: orange;
+  color: #fff; }
+
+/*占位符：% */
+.btn, .block {
+  margin-top: 5px; }
+
+.btn, .block span {
+  padding-top: 5px; }
+
+/* 插值*/
+.login-box {
+  margin-top: 14px;
+  padding-top: 14px; }
+
+.header-text-small {
+  font-size: 12px; }
+
+.header-text-medium {
+  font-size: 20px; }
+
+.header-text-big {
+  font-size: 40px; }
+
+/*字符串*/
+body.firefox .header:before {
+  content: "Hi, Firefox users!"; }
+
+/*# sourceMappingURL=variable2.css.map */

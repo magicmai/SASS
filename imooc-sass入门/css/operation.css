@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*减法*/
+.content {
+  width: 760px; }
+
+/*乘法*/
+.box {
+  width: 40px; }
+
+/*除法*/
+p {
+  font: 10px/8px;
+  width: 500px;
+  min-height: 1;
+  height: 250px;
+  margin-left: 9px; }
+
+.box {
+  width: 10; }
+
+/*变量计算*/
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+/*数学运算*/
+.box {
+  width: 60px; }
+
+/*颜色运算*/
+p {
+  color: #050709; }
+
+p {
+  color: #020406; }
+
+/*字符运算*/
+.box:before {
+  content: " Hello Sass! "; }
+
+div {
+  cursor: e-resize; }
+
+p:before {
+  content: "Foo Bar";
+  font-family: sans-serif; }
+
+/*# sourceMappingURL=operation.css.map */

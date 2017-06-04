@@ -1,0 +1,37 @@
+/* 字符串函数 */
+
+/* unquote()函数 */
+//.test1 {
+//  content: Hello Sass!;
+//}
+//.test2 {
+//  content: 'Hello Sass!;
+//}
+//.test3 {
+//  content: I'm Web Designer;
+//}
+//.test6 {
+//  content: unquote(Hello Sass);
+//}
+
+.test4 {
+  content: unquote("'Hello Sass!'");
+}
+.test5 {
+  content: unquote('"Hello Sass!"');
+}
+
+/* quote()函数 */
+.test7 {
+  content: quote('Hi!');
+}
+
+/* to-lower-case() */
+.text1 {
+  text: to-lower-case(sss_SSS_aaA);
+}
+
+/* to-upper-case() */
+.text2 {
+  text: to-upper-case(sss_SSS_aaA);
+}

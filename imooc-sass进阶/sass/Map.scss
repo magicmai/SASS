@@ -1,0 +1,95 @@
+// Map
+$theme-color: (
+  default: (
+    bgcolor: #fff,
+    text-color: #444,
+    link-color: #39f
+  ),
+  primary: (
+    bgcolor: #000,
+    text-color:#fff,
+    link-color: #93f
+  ),
+  negative: (
+    bgcolor: #f36,
+    text-color: #fefefe,
+    link-color: #d4e
+  )
+);
+
+/* map-get($map,$key) */
+$social-colors: (
+  dribble: #ea4c89,
+  facebook: #3b5998,
+  github: #171515,
+  google: #db4437,
+  twitter: #55acee
+);
+.btn-dribble{
+  color: map-get($social-colors, facebook);
+  background-color: map-get($social-colors, weibo); //null
+}
+
+/* map-has-key($map,$key) */
+@function colors($color){
+  @if not map-has-key($social-colors, $color){
+  //$names: map-keys($social-colors);
+  //@if not index($names, $color){
+    @warn "No color found for `#{$color}` in $social-colors map. Property omitted.";
+  }
+
+  @return map-get($social-colors, $color);
+}
+
+.btn-twitter {
+  color: colors(twitter);
+}
+.btn-weibo {
+  color: colors(weibo);
+}
+
+// 更少的代码：
+@each $social-network,$social-color in $social-colors {
+  .btn-#{$social-network} {
+    color: colors($social-network);
+  }
+}
+
+/* map-keys($map) */
+//@each $name in map-keys($social-colors) {
+//  .btn-#{$name} {
+//    color: colors(#name);
+//  }
+//}
+
+//@for $i from 1 through length(map-keys($social-colors)) {
+//  .btn-#{nth(map-keys($social-colors),$i)} {
+//    color: colors(nth(map-keys($social-colors),$i));
+//  }
+//}
+
+/* map-values($map) */
+/* map-merge($map1,$map2) */
+$color: (
+  text: #f36,
+  link: #f63,
+  border: #ddd,
+  backround: #fff
+);
+$typo:(
+  font-size: 12px,
+  line-height: 1.6
+);
+$newmap: map-merge($color, $typo);
+
+/* map-remove($map,$key) */
+$map: map-remove($social-colors, dribble);
+/* keywords($args) */
+
+
+
+
+
+
+
+

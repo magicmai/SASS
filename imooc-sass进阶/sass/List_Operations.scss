@@ -1,0 +1,39 @@
+/* 列表函数 */
+
+/* length()函数 */
+$p1: length(5px 10px (border 1px solid) 2em);
+.p1 {
+  line-height:  $p1;
+}
+
+/* nth()函数 */
+$p2: nth(10px 20px 30px, 2);
+.p2 {
+  font-size: $p2;
+}
+
+/* join()函数 */
+$margin: join(10px 20px, 30px 40px, space);
+//$shadow: join((10px 20px), (30px 40px));
+//$shadow: join(10px 20px, join(30px 40px, 50px 60px);
+.div1 {
+  margin: $margin;
+}
+
+/* append()函数 */
+$padding: append(append((10px 20px), 30px), 40px, space);
+.div2 {
+  padding: $padding;
+}
+
+/* zip()函数 */
+$shadow: zip(1px 2px, 1px 2px, 1px 2px, 1px 2px, #000 #fff);
+.div3 {
+  box-shadow: $shadow;
+}
+
+/* index()函数 */
+$index: index(1px solid red, 1px);
+.div4 {
+  line-height: $index;
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* 1.RGBA函数 */
+/* rgba() */
+.rgba {
+  color: rgba(255, 51, 102, 0.5);
+  background: rgba(0, 0, 125, 0.7); }
+
+/* Red(), green(), blue() */
+.red {
+  color: #ff3366; }
+
+/* mix() */
+.mix {
+  color: #ff4059; }
+
+/* 2.HSL函数 */
+/* lighten()、darken() */
+.lighten {
+  background-color: #ad141e;
+  color: #e93e49; }
+
+.darken {
+  background-color: #ad141e;
+  color: #52090e; }
+
+/* saturate()、desaturate() */
+.saturate {
+  background-color: #ad141e;
+  color: #c0010d; }
+
+.desaturate {
+  background-color: #ad141e;
+  color: #9a272f; }
+
+/* adjust-hue()函数 */
+.adjust-hue {
+  background-color: #ad141e;
+  color: #ad7014;
+  border-color: #ad7014; }
+
+/* grayscale() */
+.grayscale {
+  background-color: #ad141e;
+  color: #616161; }
+
+/* 3.Opacity函数 */
+/* alpha()、opacity() */
+.alpha {
+  color: #f2f;
+  background-color: #78bc00;
+  border-color: #78bc00; }
+
+/* opacify()、fade-in() */
+.opacify {
+  color: #f2f;
+  background-color: #ff22ff;
+  border-color: rgba(220, 0, 220, 0.6); }
+
+/* transparentize()、 fade-out() */
+.transparentize {
+  color: #f2f;
+  background-color: rgba(255, 34, 255, 0.5);
+  border-color: rgba(220, 0, 220, 0.3); }
+
+/*# sourceMappingURL=Color_Operations.css.map */

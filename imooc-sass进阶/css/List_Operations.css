@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* 列表函数 */
+/* length()函数 */
+.p1 {
+  line-height: 4; }
+
+/* nth()函数 */
+.p2 {
+  font-size: 20px; }
+
+/* join()函数 */
+.div1 {
+  margin: 10px 20px 30px 40px; }
+
+/* append()函数 */
+.div2 {
+  padding: 10px 20px 30px 40px; }
+
+/* zip()函数 */
+.div3 {
+  box-shadow: 1px 1px 1px 1px #000, 2px 2px 2px 2px #fff; }
+
+/* index()函数 */
+.div4 {
+  line-height: 1; }
+
+/*# sourceMappingURL=List_Operations.css.map */

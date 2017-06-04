@@ -1,0 +1,42 @@
+/* Introspection 函数 */
+
+/* type-of() */
+$a: type-of(100); // number
+$b: type-of("Goodbye!"); // string
+$c: type-of(true); // bool
+$d: type-of(#fff); // color
+
+/* unit() */
+$e: unit(10px * 3em); // em*px
+$f: unit(10px / 5em); // px/em
+
+/* unitless()) */
+$g: unitless(100); //true
+$h: unitless(100px); //false
+
+@mixin adjust-location($x, $y) {
+  @if unitless($x) {
+    $x: 1px * $x;
+  }
+  @if unitless($y) {
+    $y: 1px * $y;
+  }
+  position: relative;
+  left: $x;
+  top: $y;
+}
+
+.botton{
+  @include adjust-location(20px, 30);
+}
+
+
+/* comparable() */
+$i: comparable(2px, 1em); //false
+$j: comparable(2px, 1cm); //true
+$k: comparable(2px, 1px); //true
+
+/* Miscellaneous函数 */
+$m: if(true, 8em, 20em);
+$n: if(false, 8em, 20em);
+
