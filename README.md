@@ -24,11 +24,9 @@
 
 [练习代码](https://github.com/magicmai/Sass/tree/master/imooc-sass%E8%BF%9B%E9%98%B6)
 
-- sass 的控制命令(@if、@if...@else...、@for、@while、@each)
+- sass 的控制命令（@if、@if...@else...、@for、@while、@each）
 
-- [sass 函数](https://github.com/magicmai/SASS/issues/1)
-  
-  - 命令行中输入：`sass -i`，开启 sass 函数计算
+- [sass 函数](https://github.com/magicmai/SASS/issues/1)（**！** 命令行中输入：`sass -i`，可开启 sass 函数计算）
 
 - [Map 函数](https://github.com/magicmai/SASS/issues/2)
 
