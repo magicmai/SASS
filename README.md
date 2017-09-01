@@ -34,7 +34,7 @@
 
 - [@-规则和指令](https://github.com/magicmai/SASS/issues/4)
 
-- sass实例：[七色颜色卡](https://github.com/magicmai/SASS/issues/3) 在线效果：[CodePen](https://codepen.io/magicmai/full/zwgXyQ/)
+- sass实例：[七色颜色卡](https://github.com/magicmai/SASS/issues/3) （在线效果：[CodePen](https://codepen.io/magicmai/full/zwgXyQ/)）
 
 ---
 课程：
