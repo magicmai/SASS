@@ -35,4 +35,4 @@
 - sass实例：[七色颜色卡](https://github.com/magicmai/SASS/issues/3) （在线效果：[CodePen](https://codepen.io/magicmai/full/zwgXyQ/)）
 
 ---
-课程：[Sass入门](http://www.imooc.com/learn/311) | [sass 进阶](http://www.imooc.com/learn/436)
+课程：[Sass入门](http://www.imooc.com/learn/311) | [Sass 进阶](http://www.imooc.com/learn/436)
