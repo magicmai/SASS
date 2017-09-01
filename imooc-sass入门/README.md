@@ -10,10 +10,13 @@
 - 卸载sass：`gem uninstall sass`
 
 ## sass 的语法格式及编译调试
+（笔记本4 p1~3）
 
 ## sass 基础
+（笔记本4 p3~6）
 
 ## sass 运算
+（笔记本4 p6~7）
 
 ---
 课程：[Sass入门篇](http://www.imooc.com/learn/311)
