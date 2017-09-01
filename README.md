@@ -1,4 +1,4 @@
-# Sass入门笔记
+# Sass入门
 
 使用工具：webstrom编辑器，Chrome浏览器
 
@@ -20,13 +20,15 @@
 ## sass 运算
 （笔记本4 p6~7）
 
-# Sass进阶笔记
+# Sass进阶
 
 [练习代码](https://github.com/magicmai/Sass/tree/master/imooc-sass%E8%BF%9B%E9%98%B6)
 
-- sass 的控制命令
+- sass 的控制命令(@if、@if...@else...、@for、@while、@each)
 
 - [sass 函数](https://github.com/magicmai/SASS/issues/1)
+  
+  - 命令行中输入：`sass -i`，开启 sass 函数计算
 
 - [Map 函数](https://github.com/magicmai/SASS/issues/2)
 
