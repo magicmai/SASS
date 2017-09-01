@@ -8,8 +8,8 @@
 
 - 安装 [ruby](https://www.ruby-lang.org/zh_cn/downloads/) 环境，Windows 平台，可以使用 [RubyInstaller](https://rubyinstaller.org/)。
 - 安装 sass：`gem install sass`
-- 更新sass：`gem update sass`
-- 卸载sass：`gem uninstall sass`
+- 更新 sass：`gem update sass`
+- 卸载 sass：`gem uninstall sass`
 
 ## sass 的语法格式及编译调试
 （笔记本4 p1~3）
@@ -32,9 +32,7 @@
 
 - [@-规则和指令](https://github.com/magicmai/SASS/issues/4)
 
-- [sass实例 - 七色颜色卡](https://github.com/magicmai/SASS/issues/3)
-
-
+- sass实例：[七色颜色卡](https://github.com/magicmai/SASS/issues/3) 在线效果：[CodePen](https://codepen.io/magicmai/full/zwgXyQ/)
 
 ---
 课程：
